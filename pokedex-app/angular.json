@@ -9,17 +9,18 @@
         "@schematics/angular:component": {
           "inlineTemplate": true,
           "inlineStyle": true,
+          "skipTests": true,
           "style": "scss"
         }
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "pkm",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pokedex-app",
+            "outputPath": "docs/pokedex-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
