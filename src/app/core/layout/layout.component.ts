@@ -16,7 +16,15 @@ import {FooterComponent} from "./footer/footer.component";
     <pkm-main></pkm-main>
     <pkm-footer></pkm-footer>
   `,
-  styles: ``
+  styles: `
+    :host  {
+      --content-padding: 10px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  `
 })
 export class LayoutComponent {
 
