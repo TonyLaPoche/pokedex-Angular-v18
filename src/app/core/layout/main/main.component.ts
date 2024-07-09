@@ -10,7 +10,12 @@ import {RouterOutlet} from "@angular/router";
   template: `
     <router-outlet />
   `,
-  styles: ``
+  styles: `
+    :host {
+      flex-grow: 1;
+      padding: 10px;
+    }
+  `
 })
 export class MainComponent {
 
