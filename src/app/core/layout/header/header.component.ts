@@ -14,7 +14,7 @@ import {RouterLink} from "@angular/router";
         <ul class="nav-list">
           <li class="nav-item">
             <a routerLink="home" class="link">
-              Home
+              HomePage
             </a>
           </li>
         </ul>
@@ -27,7 +27,6 @@ import {RouterLink} from "@angular/router";
       width: 100vw;
       height: 96px;
       padding: 8px 16px;
-      border: 1px solid black;
     }
     .nav-container {
       height: 100%;
