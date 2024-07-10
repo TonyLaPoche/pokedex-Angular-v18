@@ -13,7 +13,6 @@ import {RouterOutlet} from "@angular/router";
   styles: `
     :host {
       flex-grow: 1;
-      padding: 10px;
     }
   `
 })

@@ -8,23 +8,17 @@ import {RouterLink} from "@angular/router";
     RouterLink
   ],
   template: `
-    <section id="header-container">
-      <nav class="nav-container">
-        <img src="/assets/images/pokeball.png" about="Home-Page" class="title-img" />
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a routerLink="home" class="link">
-              HomePage
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </section>
+      <section id="header-container">
+          <nav class="nav-container">
+              <a class="nav-link-item" routerLink="home">
+                  <img src="/assets/images/pokeball.png" alt="pokeball to catch em all" about="Home-Page"/>
+              </a>
+          </nav>
+      </section>
   `,
   styles: `
     #header-container {
       position: relative;
-      width: 100vw;
       height: 96px;
       padding: 8px 16px;
     }
@@ -32,22 +26,13 @@ import {RouterLink} from "@angular/router";
       height: 100%;
       width: 100%;
       display: flex;
-      gap: 1rem;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      align-content: center;
-      & img {
-        width: auto;
-        height: 60%;
+    }
+      .nav-link-item img {
+        max-width: 50px;
+        height: auto;
       }
-    }
-    
-    .nav-list {
-      display: flex;
-      gap: 2rem;
-    }
-    
   `
 })
 export class HeaderComponent {
